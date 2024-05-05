@@ -1,0 +1,511 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
+
+/* 1) FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 /
+     44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4.2rem 3rem;
+}
+
+.container-two {
+  max-width: 10rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.container-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.header-primary {
+  font-family: "Poppins" sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(192, 100%, 9%);
+}
+
+.secondary-header {
+  font-family: "Poppins" sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.main-paragraph {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.paragraph {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn--2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 5rem;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 9rem;
+}
+
+.btn--2:hover {
+  background-color: hsl(322, 68%, 55%);
+}
+
+.btn {
+  /* display: block; */
+  text-decoration: none;
+  font-size: small;
+  font-weight: 700;
+
+  color: hsl(321, 100%, 78%);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid hsl(321, 100%, 78%);
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: hsl(321, 100%, 78%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn--3 {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn--3:hover {
+  background-color: hsl(322, 60%, 55%);
+}
+
+.btn-container {
+  text-align: center;
+  text-decoration: none;
+
+  margin-top: 1rem;
+}
+
+.section-two {
+  margin-left: 22%;
+  margin-top: 1.8rem;
+}
+
+.section-three {
+  margin-top: 3rem;
+}
+
+.section-four {
+  width: 90%;
+  height: fit-content;
+  margin: -1rem auto;
+  padding: 1rem 0;
+  justify-content: space-around;
+  /* background-color: #f6fbff; */
+  /* background-image: url(./images/bg-section-top-desktop-1.svg); */
+}
+
+.background {
+  background-color: #f6fbff;
+}
+
+/* .backgroun-img {
+  background-image: url(./images/bg-section-top-desktop-1.svg);
+  width: 100%;
+  background-repeat: no-repeat; #F6FBFF
+} */
+
+/* .section-five {
+  margin-top: 3rem;
+  padding: 2rem 20rem;
+} */
+
+/* .section-six {
+  margin-top: 3rem;
+  padding: 2rem 20rem;
+  background-image: url(./images/bg-section-top-desktop-2.svg);
+} */
+
+.section-seven {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-eight {
+  margin-top: -0.3rem;
+  background-color: #00252e;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: hsl(322, 100%, 66%);
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex-2--cols {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.flex-2--cols-reverse {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.grid-7--cols {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1.5fr;
+}
+
+/* .test-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+} */
+
+.test-net {
+  display: flex;
+  margin: 0 auto;
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4.2rem 3rem;
+}
+
+/* .nunu {
+  grid-column: 3 / 4;
+  margin-left: 8rem;
+} */
+
+.grid-3--cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.test-net {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 4.4rem;
+  font-weight: bold;
+}
+
+.activity-message {
+  color: #555;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.btn--m {
+  margin-top: 2rem;
+}
+
+/* .section-four {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.226)),
+  url(./images/bg-section-top-desktop-2.svg);
+background-size: cover;
+background-position: center;
+} */
+
+.svg-one {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.secondary-paragraph {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.svg-img {
+  width: 45%;
+}
+
+.first-svg-img {
+  width: 70%;
+}
+
+/* .footer {
+  background-color: #00252e;
+} */
+.footer {
+  margin-bottom: 4rem;
+}
+
+.footer-svg {
+  width: 15rem;
+  height: 2rem;
+  fill: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  gap: 2rem;
+}
+
+.news-teller {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+  gap: 2rem;
+  grid-column: 4 / 5;
+}
+
+.newsteller {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer-paragraph {
+  color: #fff;
+  line-height: 1.3;
+  font-size: 0.8rem;
+}
+
+.attribution {
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.number-link,
+.email-link {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+}
+
+input {
+  width: 12rem;
+  height: 2rem;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* justify-content: center; */
+}
+
+.footer-svg-img {
+  width: 100%;
+}
+
+.telephone,
+.email {
+  color: #fff;
+}
+
+.link-icon {
+  color: #fff;
+}
+
+/*****************************
+*****************************
+fixing the safari flexbox gap
+*****************************
+*****************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
